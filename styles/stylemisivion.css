@@ -1,0 +1,129 @@
+.mision, .vision {
+    background-color: #ffffff; 
+    padding: 40px 20px; 
+    margin: 0 auto;
+    max-width: 1200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px; 
+    margin-bottom: 40px;
+}
+
+.texto-mision, .texto-vision{
+    flex: 1;
+}
+
+.mision-contenido, .vision-contenido {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+
+.mision p, .vision p {
+    font-size: 18px; 
+    line-height: 1.8; 
+    color: #333; 
+    text-align: justify;
+}
+
+.imagen-mision img, .imagen-vision img {
+    width: 150px; 
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.vision-contenido h2, .mision-contenido h2 {
+    padding: 10px 50px;
+    font-size: 36px; 
+    color: #068a48; 
+    margin-bottom: 20px; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.vision-contenido h2 {
+    text-align: right !important;
+}
+
+.mision-contenido h2 {
+    text-align: left !important;
+}
+
+.comunicado-novedade {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 100px;
+}
+
+@media (max-width: 1200px) {
+    .mision, .vision {
+        flex-direction: column; 
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .textos {
+        flex: 1;
+    }
+
+    .mision-contenido, .vision-contenido {
+        padding: 15px;
+    }
+
+    .imagen-mision img, .imagen-vision img {
+        width: 120px;
+    }
+
+    .vision-contenido h2, .mision-contenido h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mision, .vision {
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .mision-contenido, .vision-contenido {
+        padding: 10px;
+    }
+
+    .imagen-mision img, .imagen-vision img {
+        width: 100px;
+    }
+
+    .vision-contenido h2, .mision-contenido h2 {
+        font-size: 28px;
+    }
+
+    .comunicado-novedade {
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mision, .vision {
+        padding: 15px 5px;
+        gap: 10px;
+    }
+
+    .mision-contenido, .vision-contenido {
+        padding: 8px;
+    }
+
+    .imagen-mision img, .imagen-vision img {
+        width: 80px;
+    }
+
+    .vision-contenido h2, .mision-contenido h2 {
+        font-size: 24px;
+    }
+}

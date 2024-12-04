@@ -1,0 +1,60 @@
+
+.palabras-historia {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.palabras-historia h2 {
+    font-size: 36px; 
+    color: #145032; 
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+
+.palabras-historia p {
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: #333; 
+    text-align: justify;
+}
+
+.historia-contenido {
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    margin: 20px 10px;
+    width: 100%;
+}
+
+.historia-contenido h2 {
+    font-size: 36px; 
+    color: #068a48; 
+    text-align: left;
+    margin-bottom: 40px; 
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+
+.palabras-historia p {
+    font-size: 18px; 
+    line-height: 1.8; 
+    color: #333; 
+    text-align: justify;
+}
+
+.texto-historia {
+    flex: 1;
+}
+
+.imagen-historia img {
+    width: 400px; 
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}

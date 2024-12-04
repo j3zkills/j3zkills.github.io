@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.Niveles, .Niveles2 {
+    background-color: #ffffff; 
+    padding: 40px 20px; 
+    margin: 0 auto;
+    max-width: 1200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px; 
+    margin-bottom: 40px;
+}
+
+.texto-Niveles, .texto-Niveles2 {
+    flex: 1;
+    line-height: 1.8; 
+    color: #333; 
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: "PT Serif", serif;
+    font-size: 17px;
+}
+
+.Niveles-contenido, .Niveles2-contenido {
+    flex: 1;
+    padding: 0px 20px;
+    width: 100%;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+
+.Niveles p, .Niveles2 p {
+    line-height: 1.8; 
+    color: #333; 
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: "PT Serif", serif;
+    font-size: 17px;
+}
+
+.Niveles ul, .Niveles2 ul {
+    padding: 0px 15px;
+}
+
+.Niveles2 li {
+    line-height: 1.8; 
+    padding: 0px 7px;
+    color: #333; 
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: "PT Serif", serif;
+    font-size: 17px;
+}
+
+.Niveles2 ul p {
+    padding: 0px 15px;
+    font-size: 17px; 
+    line-height: 1.8; 
+    color: #333; 
+    text-align: justify;
+    font-family: "PT Serif", serif;
+}
+
+
+.imagen-Niveles img {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    border-radius: 1000px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.imagen-Niveles2 img {
+    width: 100%;
+    max-width: 150px; 
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.Niveles2-contenido h2, .Niveles-contenido h2 {
+    padding: 10px 50px;
+    font-size: 36px; 
+    color: #068a48; 
+    margin-bottom: 20px; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.Niveles2-contenido h2 {
+    text-align: right !important;
+}
+
+.Niveles-contenido h2 {
+    text-align: left !important;
+}
+
+.Niveles-slide {
+    padding: 0px 15px;
+}
+
+
+.comunicado-novedade {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 100px;
+}
+
+.contacto-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+    background-color: #ffffff;
+    margin-top: 0px;
+}
+
+.info-box {
+    flex: 1;
+    text-align: center;
+    margin: 40px;
+    background-color: white;
+}
+
+.info-box img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.info-box h3 {
+    font-size: 24px;
+    color: #068a48;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 767px) {
+    .Niveles, .Niveles2 {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .texto-Niveles, .texto-Niveles2 {
+        font-size: 16px;
+    }
+
+    .Niveles-contenido, .Niveles2-contenido {
+        margin: 10px 0;
+    }
+
+    .Niveles-contenido h2, .Niveles2-contenido h2 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .imagen-Niveles img, .imagen-Niveles2 img {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    .comunicado-novedade {
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+
+    .contacto-info {
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+
+    .info-box {
+        margin: 20px 0;
+        flex: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Niveles, .Niveles2 {
+        flex-direction: column;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .texto-Niveles, .texto-Niveles2 {
+        font-size: 17px;
+    }
+
+    .Niveles-contenido h2, .Niveles2-contenido h2 {
+        font-size: 30px;
+    }
+
+    .imagen-Niveles img, .imagen-Niveles2 img {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .comunicado-novedade {
+        flex-direction: column;
+    }
+
+    .contacto-info {
+        flex-direction: column;
+        padding: 0px 40px;
+    }
+
+    .info-box {
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Niveles, .Niveles2 {
+        flex-direction: row;
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .Niveles-contenido h2, .Niveles2-contenido h2 {
+        font-size: 36px;
+    }
+
+    .imagen-Niveles img, .imagen-Niveles2 img {
+        width: 300px;
+        height: 300px;
+    }
+}

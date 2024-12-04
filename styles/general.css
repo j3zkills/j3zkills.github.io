@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.linea {
+    width: 100%; 
+    border: 3px solid #062e01; 
+    margin: 0;
+}
+
+body {
+    font-family: "PT Serif", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffffff; 
+    color: rgb(20, 117, 64); 
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 120px;
+    margin-right: 20px;
+}
+
+.nombre-colegio h1 {
+    font-size: 40px;
+    margin: 0;
+    color: rgb(20, 117, 64);
+    font-family: "PT Serif", serif;
+}
+
+.navigation {
+    position: relative; 
+    z-index: 10000; 
+    background-color: rgb(20, 117, 64); 
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+.navigation ul li {
+    position: relative;
+}
+
+.navigation ul li a {
+    font-size: 18px;
+    font-family: "PT Serif", serif;
+    color: white; 
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    background-color: #004d00; 
+    color: #e0e0e0; 
+}
+
+.navigation ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: none;
+    z-index: 1001; 
+}
+
+.navigation ul li ul li {
+    width: 100%;
+}
+
+.navigation ul li:hover > ul {
+    display: block;
+}
+
+.navigation ul li ul li a {
+    padding: 15px;
+    font-size: 16px;
+    font-family: "PT Serif", serif;
+    color: white; 
+}
+
+.navigation ul li ul li a:hover {
+    background-color: #003d00; 
+}
+
+.comunicado-novedades {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 100px;
+}
+
+footer {
+    font-family: "PT Serif", serif;
+    font-size: 12px;
+    background-color: rgb(20, 117, 64); 
+    color: white;
+    padding: 8px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.developer-info p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.developer-info a img {
+    width: 40px; 
+    margin-left: 10px;
+}
+
+.developer-info a {
+    text-decoration: none;
+    color: white; 
+}
+
+.social-media {
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a img {
+    width: 15px; 
+    transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+    transform: scale(1.1); 
+}
+
+
+@media screen and (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .comunicado-novedades {
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nombre-colegio h1 {
+        font-size: 28px;
+    }
+
+    .navigation ul li a {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .social-media a img {
+        width: 25px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

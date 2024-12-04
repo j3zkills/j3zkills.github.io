@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.Admision, .Admision2 {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.texto-Admision, .texto-Admision2 {
+    flex: 1;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: "PT Serif", serif;
+    font-size: 17px;
+}
+
+.Admision-contenido, .Admision2-contenido {
+    flex: 1;
+    padding: 0px 20px;
+    width: 100%;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+
+.Admision p, .Admision2 p {
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: "PT Serif", serif;
+    font-size: 17px;
+}
+
+.Admision ul, .Admision2 ul {
+    padding: 0px 15px;
+}
+
+.Admision2 li {
+    line-height: 1.8;
+    padding: 0px 7px;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: "PT Serif", serif;
+    font-size: 17px;
+}
+
+.Admision2 ul p {
+    padding: 0px 15px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    font-family: "PT Serif", serif;
+}
+
+.imagen-Admision img {
+    width: 300px;
+    height: 300px;
+    border-radius: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-Admision2 img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Admision2-contenido h2, .Admision-contenido h2 {
+    padding: 10px 50px;
+    font-size: 36px;
+    color: #068a48;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.Admision2-contenido h2 {
+    text-align: right !important;
+}
+
+.Admision-contenido h2 {
+    text-align: left !important;
+}
+
+.Admision-slide {
+    padding: 0px 15px;
+}
+
+.comunicado-novedade {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 100px;
+}
+
+.contacto-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+    background-color: #ffffff;
+    margin-top: 0px;
+}
+
+.info-box {
+    flex: 1;
+    text-align: center;
+    margin: 40px;
+    background-color: white;
+}
+
+.info-box img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.info-box h3 {
+    font-size: 24px;
+    color: #068a48;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .Admision, .Admision2 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 15px;
+    }
+
+    .comunicado-novedade {
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+
+    .contacto-info {
+        padding: 0px 40px;
+    }
+
+    .info-box {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto-info {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .info-box {
+        margin: 10px auto;
+        flex: 1 1 100%;
+    }
+    .Admision, .Admision2 {
+        padding: 20px 10px;
+    }
+
+    .Admision-contenido h2, .Admision2-contenido h2 {
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+
+    .info-box h3 {
+        font-size: 20px;
+    }
+
+    .info-box p {
+        font-size: 14px;
+    }
+
+    .imagen-Admision img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .imagen-Admision2 img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Admision-contenido h2, .Admision2-contenido h2 {
+        font-size: 24px;
+    }
+
+    .info-box h3 {
+        font-size: 18px;
+    }
+
+    .info-box p {
+        font-size: 13px;
+    }
+
+    .imagen-Admision img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .imagen-Admision2 img {
+        width: 100px;
+    }
+}

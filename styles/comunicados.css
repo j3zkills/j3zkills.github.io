@@ -1,0 +1,100 @@
+.palabras-historia {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+
+.comunicado-contenido {
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    margin: 20px 10px;
+    width: 75%;
+}
+
+.comunicado-contenido h2 {
+    font-size: 36px; 
+    color: #068a48; 
+    text-align: center;
+    margin-bottom: 40px; 
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+
+.palabras-comunicado p {
+    font-size: 14px; 
+    line-height: 1.8; 
+    color: #333; 
+    text-align: justify;
+    font-family: "PT Serif", serif;
+}
+
+.texto-comunicado{
+    flex: 1;
+    min-width: 300px;
+    text-align: justify;
+}
+
+.imagen-comunicado {
+    flex: 0 0 300px;
+    margin-right: 20px;
+}
+.imagen-comunicado img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    max-width: 300px;
+    height: auto;
+}
+.tabla-pagos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-pagos th, .tabla-pagos td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla-pagos th {
+    background-color: #f2f2f2;
+    color: #006400;
+    font-weight: bold;
+}
+
+.tabla-pagos tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla-pagos tr:hover {
+    background-color: #e0e0e0;
+}
+.palabras-comunicado ul {
+    list-style-type: disc;
+    padding-left: 350px;
+}
+
+.palabras-comunicado ul li {
+    font-size: 14px;
+    font-family: "PT Serif", serif;
+    line-height: 0.7;
+    color: #333;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+    .palabras-comunicado{
+        flex-direction: column;
+    }
+
+    .imagen-comunicado {
+        width: 100%;
+    }
+}

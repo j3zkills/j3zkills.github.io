@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.comunicado-novedade {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 100px;
+}
+
+h2 {
+    text-align: center;
+    color: darkgreen;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: "PT Serif", serif;
+}
+
+
+.Inicial2-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.Inicial2-table th {
+    background-color: darkgreen;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-family: "PT Serif", serif;
+}
+
+.Inicial2-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-family: "PT Serif", serif;
+    font-size: 14px;
+    background-color: #e6f2e6;
+}
+
+.Inicial2-table p {
+    text-align: center;
+    font-family: "PT Serif", serif;
+    font-size: 14px;
+}
+
+
+.col-mes {
+    background-color: #e6f2e6;
+    color: #005500;
+    font-weight: bold;
+}
+
+.col-fecha {
+    background-color: #ffe6e6;
+    color: #cc0000;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .comunicado-novedade {
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .Inicial2-table th {
+        padding: 10px;
+    }
+
+    .Inicial2-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .col-mes, .col-fecha {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .Inicia2-table th {
+        font-size: 12px;
+    }
+
+    .Inicia2-table td {
+        font-size: 11px;
+    }
+
+    .col-mes, .col-fecha {
+        font-size: 11px;
+    }
+
+    .comunicado-novedade {
+        margin: 10px;
+    }
+}
